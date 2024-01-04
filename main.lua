@@ -49,6 +49,6 @@ function Stringtify (tbl,tab, indent)
 	if indent==0 then return "return {"..table.concat(tab,"\n")end
 	return tab
 end
-
-setclipboard(Stringtify(tree(workspace)))
-toclipboard(Stringtify(tree(workspace)))
+local result=Stringtify(tree(workspace))
+setclipboard(result)
+toclipboard(result)
